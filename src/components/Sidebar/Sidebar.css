@@ -1,0 +1,65 @@
+.sidebar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  left: -100%;
+  backdrop-filter: blur(4px);
+  transition: all 0.3 ease-in-out;
+  color: #000;
+  z-index: 100;
+}
+
+.sidebar.active {
+  opacity: 1;
+  left: 0;
+  transition: all 0.3 ease-in-out;
+}
+
+.side-warpper {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  background: #eeeeee;
+}
+
+.side-warpper .close-icons {
+  font-size: 1.7rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.side-warpper .nav-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  list-style: none;
+  gap: 10px;
+}
+
+.side-warpper .nav-menu .swiper-pagination-bullet {
+  justify-content: flex-start;
+  padding: 1rem;
+  color: fff;
+  cursor: pointer;
+}
+
+.side-warpper .nav-menu .swiper-pagination-bullet-active {
+  height: auto;
+  color: red;
+  background: none;
+  border: none;
+}
+
+.blur {
+  display: flex;
+  width: 30%;
+  height: 100%;
+}

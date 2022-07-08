@@ -1,0 +1,64 @@
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  z-index: 99;
+}
+
+nav .nav-warpper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nav-warpper .nav-icons {
+  display: none;
+}
+
+.nav-warpper .nav-logo {
+  font-size: 1.5rem;
+  margin: 0 2rem;
+}
+
+.nav-warpper .nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-warpper .nav-menu .swiper-pagination-bullet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  color: fff;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.nav-warpper .nav-menu .swiper-pagination-bullet-active {
+  color: #fff;
+  height: 2rem;
+  width: 6rem;
+  border: 2px solid #fff;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-warpper .nav-icons {
+    display: flex;
+    font-size: 1.5rem;
+    margin: 0 2rem;
+  }
+
+  .nav-warpper ul {
+    display: none;
+  }
+}
